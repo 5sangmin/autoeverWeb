@@ -2,6 +2,7 @@ import "./assets/main.css";
 
 import { createApp } from "vue";
 import App from "./App.vue";
+import 'echarts';
 
 // import * as echarts from "echarts";
 import VueECharts from "vue-echarts";
