@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        :root {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background: #f5f7fb;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: min(1100px, 90%);
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 16px;
+            margin-bottom: 24px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: clamp(2.5rem, 4vw, 4rem);
+        }
+        header p {
+            margin: 12px auto 0;
+            max-width: 700px;
+            font-size: 1.05rem;
+            opacity: 0.9;
+        }
+        .grid {
+            display: grid;
+            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 24px 50px rgba(0,0,0,0.12);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .card ul {
+            padding-left: 18px;
+            margin: 12px 0 0;
+        }
+        .card li {
+            margin-bottom: 10px;
+        }
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .chip {
+            display: inline-flex;
+            padding: 10px 16px;
+            border-radius: 999px;
+            background: #ecf0f1;
+            color: #2c3e50;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #606f7b;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>홍길동</h1>
+            <p>웹 개발과 사용자 경험에 관심이 있는 프론트엔드 개발자입니다. 깔끔한 UI, 반응형 레이아웃, 그리고 실용적인 코드로 프로젝트를 완성합니다.</p>
+        </header>
+
+        <section class="grid">
+            <article class="card">
+                <h2>소개</h2>
+                <p>간단한 포트폴리오 페이지 예시입니다. HTML과 CSS만 사용해 심플하고 읽기 쉬운 구조를 만들었습니다. 필요하면 JavaScript 기능도 추가할 수 있습니다.</p>
+            </article>
+
+            <article class="card">
+                <h2>기술 스택</h2>
+                <ul>
+                    <li>HTML / CSS</li>
+                    <li>JavaScript</li>
+                    <li>Vue.js / React (선택)</li>
+                    <li>Git / GitHub</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>프로젝트</h2>
+                <ul>
+                    <li>제품 소개 웹사이트 제작</li>
+                    <li>예약 시스템 UI 설계</li>
+                    <li>데이터 시각화 대시보드</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>연락처</h2>
+                <div class="contact">
+                    <a class="chip" href="mailto:example@example.com">example@example.com</a>
+                    <span class="chip">010-1234-5678</span>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            &copy; 2026 홍길동. 간단한 포트폴리오 페이지입니다.
+        </footer>
+    </div>
+</body>
+</html>
